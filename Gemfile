@@ -52,7 +52,11 @@ gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-2-stable'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano', '~> 3.2.1'
+  gem 'capistrano-bundler', '~> 1.1.2'
+end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
